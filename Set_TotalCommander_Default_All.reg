@@ -1,0 +1,71 @@
+Windows Registry Editor Version 5.00
+
+; ===================================================================
+; Make Total Commander the default file manager everywhere
+; Reuse existing TC window (/O)
+; ===================================================================
+; Adjust the path to TOTALCMD64.EXE if different
+; For 32-bit Windows, use TOTALCMD.EXE instead
+
+; NOTE:
+;  If you prefer not to touch system HKCR, replace every instance of:
+;     HKEY_CLASSES_ROOT
+;  with:
+;     HKEY_CURRENT_USER\Software\Classes
+
+;  That version:
+;     requires no admin rights,
+;     applies only to your account,
+;     and is equally reversible with the second file.
+
+
+[HKEY_CLASSES_ROOT\Directory\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Directory\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CLASSES_ROOT\Directory\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CLASSES_ROOT\Folder\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Folder\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CLASSES_ROOT\Folder\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Drive\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CLASSES_ROOT\Drive\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-

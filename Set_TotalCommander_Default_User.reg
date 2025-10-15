@@ -1,0 +1,60 @@
+Windows Registry Editor Version 5.00
+
+; ==============================================
+; Per-user: Make Total Commander the default
+; Affects only the current user
+; ==============================================
+; Adjust path if needed:
+;   64-bit TC: C:\Program Files\totalcmd\TOTALCMD64.EXE
+;   32-bit TC: C:\Program Files (x86)\totalcmd\TOTALCMD.exe
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\open\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\open]
+"DelegateExecute"=-
+"DropTarget"=-
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\opennewwindow\command]
+@="\"C:\\Program Files\\totalcmd\\TOTALCMD64.EXE\" /O \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\opennewwindow]
+"DelegateExecute"=-
+"DropTarget"=-

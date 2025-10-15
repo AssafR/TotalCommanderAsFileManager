@@ -1,0 +1,51 @@
+Windows Registry Editor Version 5.00
+
+; ==============================================
+; Per-user: Restore Windows Explorer as default
+; Affects only the current user
+; ==============================================
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Folder\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell]
+@="open"
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"

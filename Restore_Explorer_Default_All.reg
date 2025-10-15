@@ -1,0 +1,50 @@
+Windows Registry Editor Version 5.00
+
+; ===================================================================
+; Restore Windows Explorer as the default file manager everywhere
+; ===================================================================
+
+[HKEY_CLASSES_ROOT\Directory\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Directory\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CLASSES_ROOT\Directory\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CLASSES_ROOT\Folder\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Folder\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CLASSES_ROOT\Folder\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CLASSES_ROOT\Drive\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\Drive\shell\open\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\open]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"
+
+[HKEY_CLASSES_ROOT\Drive\shell\opennewwindow\command]
+@="explorer.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\opennewwindow]
+"DelegateExecute"="{11dbb47c-a525-400b-9e80-a54615a090c0}"

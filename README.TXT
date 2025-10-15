@@ -2,6 +2,8 @@
 README — Make Total Commander the Default File Manager (Windows)
 ===============================================================
 
+(Note: Documentation and some of the code written with the help of ChatGPT, gone through several rounds of improvements, then tested on a working computer).
+
 FILES
 -----
 1) Set_TotalCommander_Default_All.reg
